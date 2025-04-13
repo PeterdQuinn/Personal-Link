@@ -13,9 +13,9 @@ export default function Home() {
       description: "Job Matching Platform (SaaS)",
     },
     {
-      name: "PR1ME Staffing",
+      name: "PR1ME Sports",
       url: "https://www.pr1mesp.com/",
-      description: "Healthcare Staffing Agency",
+      description: "Sports & Athlete Representation",
     },
     {
       name: "ANE Landscaping",
@@ -62,6 +62,21 @@ export default function Home() {
       url: "https://www.angryerrl.com/",
       description: "Cannabis Concentrates Brand",
     },
+    {
+      name: "Junior’s Custom Towing",
+      url: "https://www.juniorscustomtowing.com/",
+      description: "24/7 Emergency Towing Services",
+    },
+    {
+      name: "AZ Preferred Flooring",
+      url: "https://demo-temp-three.vercel.app/",
+      description: "Flooring Installation & Home Design",
+    },
+    {
+      name: "Mindful Creations",
+      url: "https://www.mindful-creations.org/",
+      description: "Nonprofit for Grief & Mindfulness Support",
+    },
   ];
 
   return (
@@ -76,11 +91,11 @@ export default function Home() {
         />
 
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-center sm:text-left">
-          Full Stack Services LLC – Local Clients
+          Local Clients — Connected Through Community
         </h1>
 
         <p className="text-gray-400 text-center sm:text-left text-lg max-w-3xl">
-          We've had the privilege of building websites and tech systems for a variety of Arizona-based and national businesses. Here's a look at some of our clients and what they do.
+          These businesses represent the strength, hustle, and vision of our local network. Full Stack Services LLC proudly powers their online presence and digital infrastructure.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-8">
