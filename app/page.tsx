@@ -10,7 +10,7 @@ export default function Home() {
     {
       name: "WanaWork",
       url: "https://www.wanawork.com/",
-      description: "Job Matching Platform (SaaS)",
+      description: "Job Matching Platform",
     },
     {
       name: "PR1ME Sports",
@@ -30,7 +30,7 @@ export default function Home() {
     {
       name: "The Vault THC",
       url: "https://thevaultthc.com/",
-      description: "Cannabis Retail (Michigan)",
+      description: "Cannabis Retail ",
     },
     {
       name: "Alta Personnel",
@@ -40,7 +40,7 @@ export default function Home() {
     {
       name: "The Mint – Florida",
       url: "https://flmint.themintcannabis.com/florida/",
-      description: "Cannabis Dispensary (Florida)",
+      description: "Cannabis Dispensary (Take over)",
     },
     {
       name: "Mint Deals",
