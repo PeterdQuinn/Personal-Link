@@ -12,14 +12,6 @@ export default function Home() {
 
   const clients = [
     {
-      name: "Full Stack Services LLC",
-      url: "https://fullstackservicesllc.net",
-      description: "Digital Agency & Development",
-      niche: "Our flagship agency providing comprehensive web development, mobile applications, and digital transformation services for businesses across all industries.",
-      category: "agency",
-      icon: "🚀"
-    },
-    {
       name: "Queen of the Valley LLC",
       url: "https://www.queenofthevalleyllc.com",
       description: "Community Vending Services",
@@ -30,17 +22,17 @@ export default function Home() {
     {
       name: "PR1ME Sports",
       url: "https://pr1mesp.com",
-      description: "Sports Management Platform",
-      niche: "Advanced SaaS platform for athlete representation and sports management with comprehensive analytics and performance tracking.",
-      category: "saas",
+      description: "Sports Coaching Facility",
+      niche: "Professional sports facility platform offering 1-on-1 coaching and group training sessions for athletes looking to improve their game.",
+      category: "client",
       icon: "⚡"
     },
     {
       name: "WanaWork",
       url: "https://wanawork.com",
-      description: "AI-Powered Job Matching",
-      niche: "Intelligent job matching platform connecting employers with qualified candidates using advanced algorithms and automated screening.",
-      category: "saas",
+      description: "Job Search Platform",
+      niche: "Modern job search platform connecting job seekers with opportunities through streamlined application processes and career resources.",
+      category: "client",
       icon: "🎯"
     },
     {
@@ -64,15 +56,15 @@ export default function Home() {
       url: "https://alta-personnel.com",
       description: "Staffing & Recruitment",
       niche: "Comprehensive staffing solutions with automated matching systems serving multiple industries with temp and permanent placements.",
-      category: "saas",
+      category: "client",
       icon: "💼"
     },
     {
       name: "AZ PVA",
       url: "https://azpva.vercel.app",
-      description: "Veterans Support Organization",
-      niche: "Arizona Paralyzed Veterans platform providing resources and community support with accessibility-first design for disabled veterans.",
-      category: "client",
+      description: "Veterans Support Demo",
+      niche: "Demo platform showcasing accessibility-first design and community support features for veterans organizations and nonprofits.",
+      category: "demo",
       icon: "🇺🇸"
     },
     {
@@ -121,9 +113,9 @@ export default function Home() {
     {
       name: "SEO SaaS",
       url: "https://seo-sass.vercel.app",
-      description: "SEO Analytics Dashboard",
-      niche: "Search engine optimization platform with keyword tracking, competitor analysis, and performance reporting.",
-      category: "demo",
+      description: "SEO Analytics SaaS Platform",
+      niche: "Complete SaaS solution for search engine optimization with keyword tracking, competitor analysis, and performance reporting.",
+      category: "saas",
       icon: "📈"
     }
   ];
@@ -136,7 +128,6 @@ export default function Home() {
 
   const filterOptions = [
     { key: 'all', label: 'All Projects', count: allProjects.length },
-    { key: 'agency', label: 'Our Agency', count: clients.filter(c => c.category === 'agency').length },
     { key: 'saas', label: 'SaaS Platforms', count: [...clients, ...demoApps].filter(c => c.category === 'saas').length },
     { key: 'client', label: 'Client Sites', count: clients.filter(c => c.category === 'client').length },
     { key: 'demo', label: 'Demo Apps', count: demoApps.length }
@@ -162,14 +153,7 @@ export default function Home() {
           <div className="mb-8 sm:mb-10 flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition duration-500 animate-pulse"></div>
-              <div className="relative bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl">
-                <div className="text-4xl sm:text-5xl font-black bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  FULL STACK
-                </div>
-                <div className="text-sm sm:text-base text-white/60 font-medium tracking-widest mt-1">
-                  SERVICES LLC
-                </div>
-              </div>
+              
             </div>
           </div>
 
@@ -243,14 +227,12 @@ export default function Home() {
                 {/* Category Badge */}
                 <div className="relative z-10">
                   <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold mb-4 ${
-                    project.category === 'agency' ? 'bg-gradient-to-r from-yellow-500 to-orange-500' :
                     project.category === 'saas' ? 'bg-gradient-to-r from-blue-500 to-purple-500' :
                     project.category === 'demo' ? 'bg-gradient-to-r from-pink-500 to-red-500' :
                     'bg-gradient-to-r from-green-500 to-blue-500'
                   }`}>
                     <span className="text-lg">{project.icon}</span>
-                    {project.category === 'agency' ? 'OUR AGENCY' : 
-                     project.category === 'saas' ? 'SaaS PLATFORM' :
+                    {project.category === 'saas' ? 'SaaS PLATFORM' :
                      project.category === 'demo' ? 'DEMO APP' : 'CLIENT PROJECT'}
                   </div>
 
