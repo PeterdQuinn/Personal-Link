@@ -94,13 +94,23 @@ export default function Home() {
       icon: "🌐",
     },
     {
-      name: "Ane Landscaping LLC",
+      name: "Ane  Landscaping LLC",
       url: "https://www.anelandscapingllc.com",
       description: "Landscaping Services",
       niche:
         "Professional landscaping, outdoor design, and maintenance services for residential and commercial properties.",
       category: "client",
       icon: "🌿",
+    },
+    
+    {
+      name: "Global Care Management",
+      url: "https://www.globalcaremanagement.com",
+      description: "Healthcare Management Services",
+      niche:
+        "Comprehensive healthcare management solutions with patient portals, appointment scheduling, and telemedicine capabilities.",
+      category: "client",
+      icon: "🏥",
     },
     
   ];
