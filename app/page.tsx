@@ -112,6 +112,25 @@ export default function Home() {
       category: "client",
       icon: "🏥",
     },
+
+    {
+      name: "888 Meme",
+      url: "https://www.888.meme",
+      description: "Crypto Meme Coin",
+      niche:
+        "Community-driven cryptocurrency and meme ecosystem tracking progress, price, and social engagement.",
+      category: "demo",
+      icon: "🪙",
+    },
+    {
+      name: "AI Cybersecurity Networking",
+      url: "https://ai-cs-topaz.vercel.app",
+      description: "Cybersecurity & Networking",
+      niche:
+        "AI-augmented secure networking demos and resources for threat-aware infrastructure.",
+      category: "demo",
+      icon: "🛡️",
+    },
     
   ];
 
@@ -143,24 +162,7 @@ export default function Home() {
       category: "saas",
       icon: "📈",
     },
-    {
-      name: "888 Meme",
-      url: "https://www.888.meme",
-      description: "Crypto Meme Coin",
-      niche:
-        "Community-driven cryptocurrency and meme ecosystem tracking progress, price, and social engagement.",
-      category: "demo",
-      icon: "🪙",
-    },
-    {
-      name: "AI Cybersecurity Networking",
-      url: "https://ai-cs-topaz.vercel.app",
-      description: "Cybersecurity & Networking",
-      niche:
-        "AI-augmented secure networking demos and resources for threat-aware infrastructure.",
-      category: "demo",
-      icon: "🛡️",
-    },
+    
     {
       name: "AI Gym Platform",
       url: "https://ai-gym-cvvc.vercel.app/login",
